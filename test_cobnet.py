@@ -12,9 +12,10 @@ from cobnet import CobNet
 
 model_path = os.path.join('models', 'resnet50.pth')
 root_dir = os.path.join('/home',
-                        'laurent.lejeune',
-                        'data',
-                        'BSR',
+                        'falreis',
+                        'Me',
+                        'master-dcc-puc'
+                        'other-codes',
                         'BSDS500',
                         'data')
 
@@ -29,7 +30,7 @@ truth_paths = sorted(glob.glob(os.path.join(root_dir,
 
 #test = utls.load_boundaries_bsds(truth_paths[0])
 
-cuda = True
+cuda = False
 
 train_val_ratio = .9
 n_train_smpls = int(len(image_paths)*train_val_ratio)

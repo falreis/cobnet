@@ -7,10 +7,12 @@ from bsds_dataset import BSDSDataset
 import utils as utls
 
 bsds = BSDSDataset(os.path.join('/home',
-                                'laurent.lejeune',
-                                'data',
-                                'BSR'))
-
+                        'falreis',
+                        'Me',
+                        'master-dcc-puc'
+                        'other-codes',
+                        'BSDS500',
+                        'data'))
 
 ind = 0
 name = bsds.train_sample_names[ind]
